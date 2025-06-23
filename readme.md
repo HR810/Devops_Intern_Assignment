@@ -1,15 +1,15 @@
-# 🔀 Nginx Reverse Proxy with Go and Python Microservices
+#  Nginx Reverse Proxy with Go and Python Microservices
 
 This project demonstrates how to use **Docker Compose** to set up a simple **reverse proxy architecture** using **Nginx**, with two backend microservices:
 
-* 🟦 **Service 1**: A Go-based web service
-* 🟨 **Service 2**: A Python (Flask)-based web service
+*  **Service 1**: A Go-based web service
+*  **Service 2**: A Python (Flask)-based web service
 
 Nginx handles routing between these services using clean URLs.
 
 ---
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 1. **Clone the repository**:
 
@@ -31,7 +31,7 @@ Nginx handles routing between these services using clean URLs.
 
 ---
 
-## 🛣️ How Routing Works
+##  How Routing Works
 
 Nginx listens on port **80** (exposed as **8080**) and proxies requests to:
 
@@ -44,26 +44,26 @@ Nginx listens on port **80** (exposed as **8080**) and proxies requests to:
 
 ---
 
-## 💡 Bonus Features Implemented
+##  Bonus Features Implemented
 
-* ✅ **Clean Logging**:
+*  **Clean Logging**:
 
   * `log.Println()` in Go
   * Flask's built-in logging for requests
-* ✅ **Health Checks**:
+*  **Health Checks**:
 
   * Docker Compose health checks on `/ping` route of both services
   * Nginx only starts after services are healthy (`depends_on.condition`)
-* ✅ **Modular Docker Setup**:
+*  **Modular Docker Setup**:
 
   * Separate `Dockerfile` for each service and for Nginx
-* ✅ **Structured and simple response**:
+*  **Structured and simple response**:
 
   * JSON output on both `/ping` and `/hello` routes
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 .
@@ -82,7 +82,7 @@ Nginx listens on port **80** (exposed as **8080**) and proxies requests to:
 
 ---
 
-## 🧪 Example Endpoints
+##  Example Endpoints
 
 * **Service 1:**
 
@@ -95,7 +95,7 @@ Nginx listens on port **80** (exposed as **8080**) and proxies requests to:
 
 ---
 
-## 🏁 To Stop
+##  To Stop
 
 ```bash
 docker-compose down
