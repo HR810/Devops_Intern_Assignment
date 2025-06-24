@@ -28,7 +28,7 @@ Nginx handles routing between these services using clean URLs.
 
    * [http://localhost:8080/service1/hello](http://localhost:8080/service1/hello)
    * [http://localhost:8080/service2/hello](http://localhost:8080/service2/hello)
-   * [http://localhost:8080/service2/ping](http://localhost:8080/service2/ping)
+   * [http://localhost:8080/service1/ping](http://localhost:8080/service1/ping)
    * [http://localhost:8080/service2/ping](http://localhost:8080/service2/ping)
 
 ---
