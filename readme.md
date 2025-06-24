@@ -35,10 +35,12 @@ Nginx handles routing between these services using clean URLs.
 
 Nginx listens on port **80** (exposed as **8080**) and proxies requests to:
 
-| URL Path     | Proxied To              |
-| ------------ | ----------------------- |
-| `/service1/` | `http://service1:8001/` |
-| `/service2/` | `http://service2:8002/` |
+| URL Path     | Proxied To                            |
+| ------------ | ------------------------------------- |
+| `/service1/` | `http://service1:8001/`               |
+| `/ping1/`    | `http://localhost:8080/service1/ping` |
+| `/service2/` | `http://service2:8002/`               |
+| `/ping2/`    | `http://localhost:8080/service2/ping` |
 
 > These upstream names (`service1`, `service2`) match the container names in `docker-compose.yml`.
 
